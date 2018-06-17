@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<title>constructor function</title>
+	<script>
+	 //window
+	  var c={name:"Nagendra"}
+	  //this is called constructor function
+		function Customer(name,email,age,address)  {
+				this.name=name;		
+				this.email=email;
+				this.age=age;
+				this.address=address;
+				this.show=function(){
+						console.log("Name- "+this.name);
+						console.log("Email- "+this.email);
+						console.log("Age- "+this.age);
+				};
+		}
+	    //window-document-form-form-element
+	    //if we do not use new operator then  this keywork will point to window
+		Customer("nagendra","939@gmail.com",23,"*#*@@@");
+		console.log(window.name);
+		Customer("Amit","amit@gmail.com",123,"*#Rajnagar@@@");
+		console.log(window.name);
+	  
+		//new is mandetory here since we are using this keyword inside it
+		var customer1=new Customer("Nagendra","nagendra@gmail.com",37,"New Delhi!");
+		var customer2=new Customer("Ameta","Ameta@gmail.com",34,"New Ya!!");
+		var customer3=new Customer("Jagriti","Jagriti@gmail.com",23,"Jersey!");
+		customer1.show();
+		customer2.show();
+		customer3.show();
+	
+	</script>
+	<style type="text/css">
+			img {
+				height: 80px;
+			}
+	</style>
+</head>
+<body>
+
+   <header style="height: 30px;background-color: maroon;">
+   </header>
+  <section class="container">
+   <h4>Hey this my first JavaScript code</h4>
+   <hr/>
+   <img src="img/math.jpg"/>
+   <div style="width: 60%">
+   <form name="factform">
+   	<div class="form-group">
+    <label for="fact">Number:</label>
+    <input type="text" class="form-control" name="num" onkeyup="clearText();">
+  </div>
+	  <button type="button" class="btn btn-primary" onclick="compute();">Submit</button>
+   </form>
+    <hr/>
+    
+    <span style="background-color: yellow;color:black;font-size: 18px;"  id="message">
+    		coming soon.....................
+    </span>
+     
+   </div>
+   </section>
+</body>
+</html>

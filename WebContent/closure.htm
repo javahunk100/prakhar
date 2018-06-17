@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+  <script type="text/javascript">
+  			var x=100; //x is acting as a global
+  			
+  			var cars = [["Saab","POLO"], "Volvo", ["BMW","BMW12","BMW93"]]; 
+  			function checkArray(arr){
+  				var totalContent="";
+  				if(arr.constructor ===Array) {
+  						var k=arr.length;
+  						alert("k = "+k);
+  						for(var p=0;p<k;p++) {
+  							if(arr[p].constructor ===Array) {
+  								var g=arr[p].length;
+  								for(var t=0;t<g;t++) {
+  									totalContent=totalContent+" , "+arr[p][t];
+  								}
+  							}else{
+  								totalContent=totalContent+" , "+arr[p];
+  							}
+  						}
+  				}
+  				alert("totalContent  = "+totalContent);
+  			}
+  			
+  			function omega(){
+  				x++;
+  				alert("x= = "+x);
+  			}
+  			
+  			function show(){
+  				alert("x is global now= "+x);
+  				
+  			}
+		   
+  			
+  			var call=( function(name) {
+				                alert("_@@))#(#(#Check it...))");
+				 				var  x=100;
+				 				 return function(){
+				 					  alert("_@@))#(#(#Check it GOD...))");
+				 						x++;	 
+				 						console.log("call = x= "+x+" , name = "+name);	 
+				 				};				 				
+					    })("Chinmay");
+					
+			   console.log(call) //self invoked function		
+				 call();
+			//	call();
+				/* call();
+				call();
+				call();
+				omega();
+				omega();
+				omega(); 
+				//checkArray(cars);
+				show(); */
+  </script>
+</head>
+<body style="background-image:url('pug.jpg');	background-repeat: no-repeat;">
+   <br/><br/><br/><br/>
+
+    
+</body>
+</html>

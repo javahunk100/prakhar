@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Hello JavaScript</title>
+	
+</head>
+<body>
+	  <header style="height: 24px;background-color: #eaeaea;">
+	  </header>
+	<div class="container">
+	 <hr/>
+     <h2>Music System</h2>
+     <img src="img/download.png"  id="messageicon"/>
+       <br/> <br/>
+       </div>
+</body>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	  
+	  //Creating an instance in JavaScript
+      var customer={}; //creating black object
+      customer.name="Nagendra";
+      customer.email="nagendra@gmail.com";
+      customer.mobile="30390303";
+      console.log(customer);
+      customer.show=function() {
+    	 	console.log("____show function is called......."); 
+    	 	console.log(this.name);
+    	 	console.log(this.email);
+    	 	console.log(this.mobile);
+      };
+      console.log(customer);
+      customer.show();
+      
+  </script>
+</html>

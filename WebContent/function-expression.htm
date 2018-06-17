@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Hello JavaScript</title>
+	
+</head>
+<body>
+	  <header style="height: 24px;background-color: #eaeaea;">
+	  </header>
+	<div class="container">
+	 <hr/>
+     <h2>Music System</h2>
+     <img src="img/download.png"  id="messageicon"/>
+       <br/> <br/>
+       </div>
+</body>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+// fd is variable which holds function defintion
+ var fd=function(num) {
+	 var temp=num*num;
+	 return temp;
+ };
+ console.log(fd);
+ 
+ 
+ var gg=fd(7);
+ console.log(gg);
+ 
+
+var result=fact(4);
+console.log(result);
+ 
+function fact(num) {
+	var temp=num*num;
+	return temp;
+}
+//we can hold function definition inside JavaScript variable
+//undefined one of type inside JavaScript
+/* var foo=function() {
+	 var x=100;
+	 var y=200;
+	  var z=x+y;
+		 return z;
+};
+console.log(foo);
+var temp=foo();
+console.log("Result is = "+temp); */
+
+  </script>
+</html>

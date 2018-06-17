@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Hello JavaScript</title>
+	
+</head>
+<body>
+	  <header style="height: 24px;background-color: #eaeaea;">
+	  </header>
+	<div class="container">
+	 <hr/>
+     <h2>Music System</h2>
+     <img src="img/download.png"  id="messageicon"/>
+       <br/> <br/>
+       </div>
+</body>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	  
+      var customer1 ={name:"Nagendra",email:"nagen@gmail.com",mobile:"93128282828"};
+      var customer2 ={name:"Nagendra",email:"nagen@gmail.com",mobile:"345128282828",foo:function(){
+    	  console.log("This is foo....");
+      }};
+      
+      customer2.age=37;
+      customer2.show=function() {
+    	     console.log("*********************************************");
+    	     console.log(this.name);
+    	     console.log(this.email);
+    	     console.log(this.mobile);
+    	     console.log(this.age);
+    	     console.log("*********************************************");
+      };
+      console.log(customer1);
+      console.log(customer2);
+      console.log(customer2.show); //Here I am not calling show.....I am just printing definition of the method show
+      customer2.show();
+      customer2.foo();
+  </script>
+</html>
