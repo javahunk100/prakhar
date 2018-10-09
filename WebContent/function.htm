@@ -13,38 +13,21 @@
      <h2>Music System</h2>
      <img src="img/download.png"  id="messageicon"/>
        <br/> <br/>
+       	<span id="message" style="font-size: 22px;color: black;background-color: yellow;">Coming sooon!!!!!!!!!!!!!!!!!!!</span>
        </div>
 </body>
-
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-//we can hold function definition inside JavaScript variable
-//undefined one of type inside JavaScript
-//no need to write var in argument
-//every function is an object 
-var status="success";
-var foo=function(num1,num2=450) {
-				  var z=num1+num2;
-	  			  return z;
-};
+	
+	var result=add(300,400);
+	var spanObj=document.getElementById("message");
+	spanObj.innerHTML="Hey! your result is  = "+result;
 
-var temp1=execute(foo);
-console.log("temp1 = "+temp1);
-
-
-var temp2=execute(function(num1,num2=450) {
-	  var z=num1+num2;
-		  return z;
-});
-console.log("temp2 = "+temp2);
-
- function execute(callback){
-	 var temp=callback(10,20);
- 	 console.log(temp);
- 	 return temp;
- } 
-
+	  function add(num1,num2){
+		  var temp=num1+num2;
+		  return temp;
+	  }
 
   </script>
 </html>
